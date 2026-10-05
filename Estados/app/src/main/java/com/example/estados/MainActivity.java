@@ -2,6 +2,7 @@ package com.example.estados;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -50,5 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("Ejemplo", "Estoy en on Destroy");
+        Intent ejemplo = new Intent(this, MainActivity2.class);
+        startActivity(ejemplo);
     }
 }
